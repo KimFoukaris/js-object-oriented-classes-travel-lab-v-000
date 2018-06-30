@@ -19,7 +19,11 @@ class Route {
     let hor2 = eastWest.findIndex(el => el == this.endingLocation.horizontal);
     return (this.endingLocation.vertical - this.beginningLocation.vertical) + (hor2 -hor1);
   }
-  estimatedTime() {
-    return this.blocksTravelled()/3;
-  }
+  estimatedTime(peak) {
+    if (peak === true) {
+      return this.blocksTravelled()/2;
+    } else {
+      return this.blocksTravelled()/3;
+    }
+  };
 }
