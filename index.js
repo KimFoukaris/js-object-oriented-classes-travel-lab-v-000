@@ -19,4 +19,7 @@ class Route {
     let hor2 = eastWest.findIndex(el => el == this.endingLocation.horizontal);
     return (this.endingLocation.vertical - this.beginningLocation.vertical) + (hor2 -hor1);
   }
+  estimatedTime() {
+    return blocksTravelled*3;
+  }
 }
