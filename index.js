@@ -17,6 +17,6 @@ class Route {
     let eastWest =  ['1st Avenue', '2nd Avenue', '3rd Avenue', 'Lexington Avenue', 'Park', 'Madison Avenue', '5th Avenue'];
     let hor1 = eastWest.findIndex(el => el == this.beginningLocation.horizontal);
     let hor2 = eastWest.findIndex(el => el == this.endingLocation.horizontal);
-    return (this.endingLocation.vertical - this.beginningLocation.vertical);
+    return (this.endingLocation.vertical - this.beginningLocation.vertical) + (hor2 -hor1);
   }
 }
