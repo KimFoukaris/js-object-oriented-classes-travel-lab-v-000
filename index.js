@@ -16,10 +16,10 @@ class Route {
   blocksTravelled() {
     let eastWest =  ['1st Avenue', '2nd Avenue', '3rd Avenue', 'Lexington Avenue', 'Park', 'Madison Avenue', '5th Avenue'];
     let hor1 = eastWest.find(function(element) {
-      return element === this.beginningLocation.horizontal;
+      return element == this.beginningLocation.horizontal;
     });
     let hor2 = eastWest.find(function(element) {
-      return element === this.endingLocation.horizontal;
+      return element == this.endingLocation.horizontal;
     });
     return (this.endingLocation.vertical - this.beginningLocation.vertical);
   }
