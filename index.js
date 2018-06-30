@@ -20,6 +20,6 @@ class Route {
     return (this.endingLocation.vertical - this.beginningLocation.vertical) + (hor2 -hor1);
   }
   estimatedTime() {
-    return this.blocksTravelled()*3;
+    return this.blocksTravelled()/3;
   }
 }
