@@ -14,14 +14,7 @@ class Route {
     this.endingLocation = endingLocation;
   }
   blocksTravelled() {
-    debugger;
     return this.endingLocation.vertical - this.beginningLocation.vertical;
   }
 }
 
-class Location {
-  constructor (horizontal, vertical) {
-    this.horizontal = horizontal;
-    this.vertical = vertical;
-  }
-}
